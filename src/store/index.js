@@ -1,5 +1,5 @@
 import { createStore } from 'vuex'
-
+// import axios from axios
 export default createStore({
   state: {
     cars:null,
@@ -26,6 +26,12 @@ export default createStore({
       let converted= await fetchedInfo.json()
       console.log(converted);
       gaming_consoles.commit('setGaming_Consoles',converted.gaming_consoles)
+    },
+    async getCars(cars){
+      let fetchedInfo =await fetch ('https://mquanaazi.github.io/myFriendsData/json/data.json')
+      let converted= await fetchedInfo.json()
+      console.log(converted);
+      cars.commit('setCars',converted.cars)
     },
     async getFriends({commit}){
       let fetchedInfo = await fetch('https://mquanaazi.github.io/myFriendsData/json/data.json')

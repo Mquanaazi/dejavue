@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 // import CardView from '../components/CardComp.vue'
-import FriendsView from '../views/FriendsView.Vue'
+import FriendsView from '../views/FriendsView.vue'
 import CarsView from '../views/CarsView.vue'
 import ConsolesView from '../views/ConsolesView.vue'
 
